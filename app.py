@@ -91,9 +91,9 @@ class App:
     def update_window_title(self):
         if self.current_file_path:
             file_name = os.path.basename(self.current_file_path)
-            self.root.title(f"Private Chat Stream - [{file_name}]")
+            self.root.title(f"[{file_name}] - Diary")
         else:
-            self.root.title("Private Chat Stream - [No File Loaded]")
+            self.root.title("[No File Loaded] - Diary")
 
     def zoom_text(self, event):
         if event.delta > 0 or event.num == 4:
